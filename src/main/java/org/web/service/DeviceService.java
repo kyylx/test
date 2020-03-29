@@ -1,11 +1,11 @@
 package org.web.service;
 
-import org.web.domain.Device;
+import org.web.controller.responce.DeviceResponse;
 
-import java.util.List;
+import java.util.Map;
 
 public interface DeviceService {
 
-    List<Device> findAllDevices();
-    List<Device> findAllDevicesForProject(Long id);
+    Map<String, DeviceResponse> findDevicesByProjectId(Long projectId);
+
 }

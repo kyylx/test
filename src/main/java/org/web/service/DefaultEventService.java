@@ -15,8 +15,4 @@ public class DefaultEventService implements EventService {
         this.eventRepository = eventRepository;
     }
 
-    @Override
-    public List<Event> findAllEvents() {
-        return eventRepository.findAll();
-    }
 }

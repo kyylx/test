@@ -1,9 +1,9 @@
 package org.web.service;
 
-import org.web.domain.Project;
+import org.web.controller.responce.ProjectResponse;
 
 import java.util.List;
 
 public interface ProjectService {
-    List<Project> findAllProjects();
+    List<ProjectResponse> findAllProjects();
 }

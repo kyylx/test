@@ -1,12 +1,11 @@
 package org.web.domain;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "projects")
-public class Project implements Serializable {
+public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -47,6 +46,4 @@ public class Project implements Serializable {
     public void setDevices(List<Device> devices) {
         this.devices = devices;
     }
-
-
 }
